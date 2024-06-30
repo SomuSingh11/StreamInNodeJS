@@ -1,0 +1,58 @@
+Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.
+
+Node.js lets developers use JavaScript to write command line tools and for server-side scripting. The ability to run JavaScript code on the server is often used to generate dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere" paradigm,[6] unifying web-application development around a single programming language, as opposed to using different languages for the server- versus client-side programming.
+
+Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games).[7]
+
+The Node.js distributed development project was previously governed by the Node.js Foundation,[8] and has now merged with the JS Foundation to form the OpenJS Foundation. OpenJS Foundation is facilitated by the Linux Foundation's Collaborative Projects program.[9]
+
+History
+
+Ryan Dahl, creator of Node.js, in 2010
+
+Rocket Turtle, the official mascot of Node.js since February 2024
+Node.js was initially written by Ryan Dahl in 2009,[10] about 13 years after the introduction of the first server-side JavaScript environment, Netscape's LiveWire Pro Web.[11] The initial release supported only Linux and Mac OS X. Its development and maintenance was led by Dahl and later sponsored by Joyent.[12]
+
+Dahl criticized the limited capability of Apache HTTP Server to handle many (10,000+) concurrent connections, as well as the dominant programming paradigm of sequential programming, in which applications could block entire processes or cause the creation of multiple execution stacks for simultaneous connections.[13]
+
+Dahl demonstrated the project at the inaugural European JSConf on November 8, 2009.[14][15][16] Node.js combined Google's V8 JavaScript engine, an event loop, and a low-level I/O API.[17]
+
+In January 2010, a package manager was introduced for the Node.js environment called npm.[18] The package manager allows programmers to publish and share Node.js packages, along with the accompanying source code, and is designed to simplify the installation, update and uninstallation of packages.[17]
+
+In June 2011, Microsoft and Joyent implemented a native Windows version of Node.js.[19] The first Node.js build supporting Windows was released in July 2011.
+
+In January 2012, Dahl yielded management of the project to npm creator Isaac Schlueter.[20] In January 2014, Schlueter announced that Timothy J. Fontaine would lead the project.[21]
+
+In December 2014, Fedor Indutny created io.js, a fork of Node.js created because of dissatisfaction with Joyent's governance as an open-governance alternative with a separate technical committee. The goal was to enable a structure that would be more receptive to community input, including the updating of io.js with the latest Google V8 JavaScript engine releases, diverging from Node.js's approach at that time.[22]
+
+The Node.js Foundation, formed to reconcile Node.js and io.js under a unified banner, was announced in February 2015.[23] The merger was realized in September 2015 with Node.js v0.12 and io.js v3.3 combining into Node v4.0.[24] This merge brought V8 ES6 features into Node.js and started a long-term support release cycle.[25] By 2016, the io.js website recommended returning to Node.js and announced no further io.js releases, effectively ending the fork and solidifying the merger's success.[26]
+
+In 2019, the JS Foundation and Node.js Foundation merged to form the OpenJS Foundation.
+
+On September 6, 2023, Node.js 20.6.0 was released. The update brought the addition of built-in support for .env files, the unflagging of import.meta.resolve, the introduction of a new node:module API register for module customization hooks and a new initialize hook. Additionally, the module customization load hook now supports CommonJS, and Node.js C++ add-ons have gained experimental support for cppgc (Oilpan), which is a C++ garbage collection library for V8.[27]
+
+Branding
+The Node.js logo features a green hexagon with overlapping bands to represent the cross-platform nature of the runtime.[28] The Rocket Turtle was chosen as the official Node.js mascot in February 2024 following a design contest.[29]
+
+Overview
+Node.js allows the creation of web servers and networking tools using JavaScript and a collection of "modules" that handle various core functionalities.[14][17][30][31][32] Modules are provided for file system I/O, networking (DNS, HTTP, TCP, TLS/SSL or UDP), binary data (buffers), cryptography functions, data streams and other core functions.[17][31][33] Node.js's modules use an API designed to reduce the complexity of writing server applications.[17][31]
+
+JavaScript is the only language that Node.js supports natively, but many compile-to-JS languages are available.[34] As a result, Node.js applications can be written in CoffeeScript,[35] Dart, TypeScript, ClojureScript and others.
+
+Node.js is primarily used to build network programs such as web servers.[30] The most significant difference between Node.js and PHP is that most functions in PHP block until completion (commands execute only after previous commands finish), while Node.js functions are non-blocking (commands execute concurrently or even in parallel,[36][37][improper synthesis?] and use callbacks to signal completion or failure).[30]
+
+Node.js is officially supported by Linux, macOS and Microsoft Windows 8.1 and Server 2012 (and later),[3] with Tier 2 support for SmartOS and IBM AIX and experimental support for FreeBSD. OpenBSD also works, and LTS versions are available for IBM i (AS/400).[38] The source code may also be built on similar operating systems that are not officially supported, such as NonStop OS[39] and Unix servers.
+
+Platform architecture
+Node.js enables development of fast web servers in JavaScript using event-driven programming.[17] Developers can create scalable servers without using threading by using a simplified model that uses callbacks to signal the completion of a task.[17][page needed] Node.js connects the ease of a scripting language (JavaScript) with the power of Unix network programming.[17]
+
+Node.js was built on top of Google's V8 JavaScript engine since it was open-sourced under the BSD license, and it contains comprehensive support for fundamental protocols such as HTTP, DNS and TCP.[14] JavaScript's existing popularity made Node.js accessible to the web-development community.[14]
+
+Industry support
+There are thousands of open-source libraries for Node.js, most of which are hosted on the npm website. Multiple developer conferences and events are held that support the Node.js community, including NodeConf, Node Interactive and Node Summit, as well as a number of regional events.
+
+The open-source community has developed web frameworks to accelerate the development of applications. Such frameworks include Express.js, Socket.IO, Sails.js, Next.js and Meteor.[17][40] Various packages have also been created for interfacing with other languages or runtime environments such as Microsoft .NET.[41]
+
+Modern desktop IDEs provide editing and debugging features specifically for Node.js applications. Such IDEs include Atom, Brackets, JetBrains WebStorm,[42][43] Microsoft Visual Studio (with Node.js Tools for Visual Studio,[44] or TypeScript with Node definitions[45][46][47][48]), NetBeans,[49] Nodeclipse Enide Studio[50] (Eclipse-based) and Visual Studio Code.[51][52] Some online IDEs also support Node.js, such as Codeanywhere, Eclipse Che, Cloud9 IDE and the visual flow editor in Node-RED.
+
+Node.js is supported across a number of cloud-hosting platforms such as Jelastic, Google Cloud Platform, AWS Elastic Beanstalk, Azure Web Apps and Joyent.
